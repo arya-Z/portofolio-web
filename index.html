@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>M. Arya Pratama | Software Engineer • Web Developer • AI Enthusiast</title>
+  <meta name="description" content="Portofolio Profesional M. Arya Pratama - Spesialis Customer Support, Data Entry, Pengolahan Data Excel, Database Architecture, & Software Engineering">
+  
+  <link rel="icon" href="assets/poto profil.jpeg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- INTERACTIVE SPOTLIGHT & CANVAS BACKGROUND -->
+  <div class="cursor-spotlight"></div>
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- NAVBAR RESPONSIF -->
+  <header class="header-container">
+    <nav id="navbar">
+      <a href="#home" class="logo">M. ARYA <span>PRATAMA</span></a>
+      
+      <div class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="#home" class="active">Beranda</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#skills">Keahlian</a></li>
+          <li><a href="#services">Layanan</a></li>
+          <li><a href="#certificates">Sertifikasi</a></li>
+          <li><a href="#projects">Portofolio</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+        <div class="mobile-nav-cta">
+          <a href="#contact" class="btn-primary" style="width: 100%; justify-content: center;"><i class="fa-solid fa-briefcase"></i> Rekrut Saya</a>
+        </div>
+      </div>
+
+      <div class="nav-actions">
+        <a href="#contact" class="nav-cta-desktop">Rekrut Saya</a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu Navigasi">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-content reveal-left">
+      <div class="status-badge pulse-badge">
+        <span class="status-dot"></span> Open for Customer Support, Admin, & Full-Time Roles
+      </div>
+      <h1>M. Arya Pratama</h1>
+      <p class="hero-subtitle">Software Engineering Enthusiast • Web Developer & Artificial Intelligence <br><span class="typing-text"></span></p>
+      <p class="hero-desc">Software Engineering Enthusiast dengan minat pada Full-Stack Web Development, Database Management, dan Artificial Intelligence. Berpengalaman mengembangkan aplikasi berbasis web yang responsif, aman, dan mudah digunakan dengan mengutamakan kualitas kode serta pengalaman pengguna.</p>
+      
+      <div class="btn-group">
+        <a href="#contact" class="btn-primary"><i class="fa-solid fa-briefcase"></i> Kirim Tawaran Kerja</a>
+        <a href="#projects" class="btn-outline"><i class="fa-solid fa-folder-open"></i> Lihat Portofolio</a>
+        <a href="assets/CV_M_Arya_Pratama.pdf" class="btn-gold" download><i class="fa-solid fa-download"></i> Unduh CV</a>
+      </div>
+
+      <div class="hero-tech-pills">
+        <span>Tools:</span>
+        <i class="fa-solid fa-headset" title="Customer Support & Admin" style="color: #06b6d4;"></i>
+        <i class="fa-solid fa-keyboard" title="Data Entry" style="color: #f59e0b;"></i>
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/microsoftexcel.svg" title="Microsoft Excel Advanced" class="excel-brand-icon" style="vertical-align: middle;">
+        <i class="fa-solid fa-database" title="Database Management" style="color: #10b981;"></i>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" style="width: 20px; height: 20px; vertical-align: middle; display: inline-block;">
+        <i class="devicon-vscode-plain colored" title="Visual Studio Code" style="font-size: 1.25rem; vertical-align: middle;"></i>
+      </div>
+    </div>
+
+    <!-- HERO AVATAR -->
+    <div class="hero-avatar reveal-right">
+      <div class="avatar-container">
+        <div class="avatar-ring"></div>
+        <div class="avatar-frame-circle">
+          <i class="fa-solid fa-user default-icon" id="defaultIcon"></i>
+          <img id="profileImage" src="assets/poto profil.jpeg" alt="M Arya Pratama" class="profile-img" onerror="this.style.display='none'; document.getElementById('defaultIcon').style.display='block';">
+        </div>
+        <div class="floating-badge badge-1"><i class="fa-solid fa-file-excel"></i></div>
+        <div class="floating-badge badge-2"><i class="fa-solid fa-headset"></i></div>
+        <div class="floating-badge badge-3"><i class="fa-solid fa-database"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="reveal">
+    <div class="section-header">
+      <span class="section-tag">PROFIL KOMPREHENSIF</span>
+      <h2>Tentang <span class="gold-text">Saya</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-card main-about">
+        <h3>Communication • Customer Support • Software Solutions</h3>
+        <p>Sebagai mahasiswa Rekayasa Perangkat Lunak di Institut Teknologi dan Bisnis Indonesia (ITBI), saya menggabungkan kemampuan komunikasi yang baik dengan keahlian dalam pengembangan perangkat lunak. Berfokus pada Full-Stack Web Development, Artificial Intelligence, dan Machine Learning, saya senang membangun solusi digital yang modern, efisien, dan memberikan dampak nyata bagi pengguna.</p>
+        <p>Saya siap berkontribusi dalam pengembangan perangkat lunak, pengelolaan data, serta memberikan dukungan teknis dan layanan pelanggan yang profesional. Didukung kemampuan analitis, komunikasi yang baik, dan ketelitian , saya mampu beradaptasi dengan cepat serta bekerja secara individu maupun kolaboratif untuk menghasilkan solusi yang efektif dan bernilai bagi organisasi.</p>
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <strong>Communication Skills:</strong>
+            <span>Ramah, Tanggap, & Berorientasi pada Kepuasan Klien/User</span>
+          </div>
+          <div class="highlight-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <strong>Attention to Detail:</strong>
+            <span>Akurasi Tinggi dalam Pendataan & Tugas Ringan Kantor</span>
+          </div>
+          <div class="highlight-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <strong>Fast Learning:</strong>
+            <span>Cepat Beradaptasi dengan Sistem Kerja dan Lingkungan Baru</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-side-card">
+        <div class="side-box">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <div>
+            <h4>Pendidikan</h4>
+            <p>S1 Rekayasa Perangkat Lunak - ITBI (2023 - Sekarang)</p>
+          </div>
+        </div>
+        <div class="side-box">
+          <i class="fa-solid fa-shield-halved"></i>
+          <div>
+            <h4>Etos Kerja</h4>
+            <p>Disiplin, Komunikatif, Tanggap, & Ramah</p>
+          </div>
+        </div>
+        <div class="side-box">
+          <i class="fa-solid fa-bullseye"></i>
+          <div>
+            <h4>Kesiapan Karir</h4>
+            <p>Siap Berkontribusi sebagai Software Engineer & Web Developer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="reveal">
+    <div class="section-header">
+      <span class="section-tag">KOMPETENSI & KEAHLIAN UTAMA</span>
+      <h2>Keahlian <span class="gold-text">Profesional</span></h2>
+    </div>
+    
+    <div class="skills-category-grid">
+      <div class="skill-cat-card">
+        <div class="skill-cat-icon"><i class="fa-solid fa-headset"></i></div>
+        <h3>Customer Support & Admin</h3>
+        <ul class="skill-list">
+          <li><i class="fa-solid fa-check"></i> Layanan Pelanggan & Penanganan Chat</li>
+          <li><i class="fa-solid fa-check"></i> Penulisan Email Profesional & Balasan Cepat</li>
+          <li><i class="fa-solid fa-check"></i> Penggunaan Ekosistem Google Workspace</li>
+          <li><i class="fa-solid fa-check"></i> Pengelolaan Jadwal & Tugas Harian Ringan</li>
+        </ul>
+      </div>
+
+      <div class="skill-cat-card">
+        <div class="skill-cat-icon"><i class="fa-solid fa-file-excel"></i></div>
+        <h3>Data Entry & Reporting</h3>
+        <ul class="skill-list">
+          <li><i class="fa-solid fa-check"></i> Microsoft Excel Lanjutan (VLOOKUP, Pivot)</li>
+          <li><i class="fa-solid fa-check"></i> Pembersihan & Validasi Data (Data Cleaning)</li>
+          <li><i class="fa-solid fa-check"></i> Pembuatan Laporan Rekapitulasi Sederhana</li>
+          <li><i class="fa-solid fa-check"></i> Pencatatan Data Cepat Berakurasi Tinggi</li>
+        </ul>
+      </div>
+
+      <div class="skill-cat-card">
+        <div class="skill-cat-icon"><i class="fa-solid fa-database"></i></div>
+        <h3>Database Management</h3>
+        <ul class="skill-list">
+          <li><i class="fa-solid fa-check"></i> Perancangan Basis Data Relasional (SQL)</li>
+          <li><i class="fa-solid fa-check"></i> Pembuatan Entity Relationship Diagram (ERD)</li>
+          <li><i class="fa-solid fa-check"></i> Manajemen & Normalisasi Tabel Data</li>
+          <li><i class="fa-solid fa-check"></i> Dasar Pengelolaan Penyimpanan Data</li>
+        </ul>
+      </div>
+
+      <div class="skill-cat-card">
+        <div class="skill-cat-icon"><i class="fa-solid fa-laptop-code"></i></div>
+        <h3>Programming & Web</h3>
+        <ul class="skill-list">
+          <li><i class="fa-solid fa-check"></i> Pengembangan Frontend Dasar (HTML, CSS)</li>
+          <li><i class="fa-solid fa-check"></i> Dasar Bahasa Pemrograman Python</li>
+          <li><i class="fa-solid fa-check"></i> Kontrol Versi Proyek (Git & GitHub)</li>
+          <li><i class="fa-solid fa-check"></i> Pemahaman Logika Sistem & REST API</li>
+        </ul>
+      </div>
+
+      <div class="skill-cat-card">
+        <div class="skill-cat-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+        <h3>IT & Technical Support</h3>
+        <ul class="skill-list">
+          <li><i class="fa-solid fa-check"></i> Troubleshooting Hardware & Software</li>
+          <li><i class="fa-solid fa-check"></i> Instalasi & Konfigurasi Sistem Operasi</li>
+          <li><i class="fa-solid fa-check"></i> Penggunaan Visual Studio Code & Tools</li>
+          <li><i class="fa-solid fa-check"></i> Pemeliharaan Perangkat Digital Kantor</li>
+        </ul>
+      </div>
+
+      <div class="skill-cat-card">
+        <div class="skill-cat-icon"><i class="fa-solid fa-users"></i></div>
+        <h3>Soft Skills & Bahasa</h3>
+        <ul class="skill-list">
+          <li><i class="fa-solid fa-check"></i> Communication Skills & Keramahan Publik</li>
+          <li><i class="fa-solid fa-check"></i> Problem Solving & Berorientasi Solusi</li>
+          <li><i class="fa-solid fa-check"></i> Time Management & Ketepatan Deadline</li>
+          <li><i class="fa-solid fa-check"></i> Bahasa: Indonesia (Aktif) & English (Basic)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="reveal">
+    <div class="section-header">
+      <span class="section-tag">BIDANG LAYANAN & KONTRIBUSI</span>
+      <h2>Solusi yang <span class="gold-text">Saya Tawarkan</span></h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon"><i class="fa-solid fa-headset"></i></div>
+        <h3>Customer Support</h3>
+        <p>Layanan dukungan pelanggan yang ramah, cepat tanggap dalam membalas chat/pesan, serta siap membantu operasional front-office ringan.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fa-solid fa-file-excel"></i></div>
+        <h3>Excel & Data Reporting</h3>
+        <p>Penyusunan laporan operasional bisnis menggunakan rumus lanjutan Excel, Pivot Table, dan visualisasi data performa harian.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+        <h3>Database Management</h3>
+        <p>Perancangan skema data, normalisasi tabel, dan manajemen penyimpanan basis data perusahaan agar terstruktur aman.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+        <h3>Admin & Web Support</h3>
+        <p>Mendukung transformasi digital melalui pengembangan aplikasi web, pengelolaan data, serta peningkatan efisiensi operasional berbasis teknologi</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES SECTION -->
+  <section id="certificates" class="reveal">
+    <div class="section-header">
+      <span class="section-tag">KREDENSIAL & LISENSI RESMI</span>
+      <h2>Sertifikasi & <span class="gold-text">Seminar Resmi</span></h2>
+    </div>
+    <div class="certificates-grid">
+      
+      <!-- Sertifikat 5: Seminar Nasional Mandiri (Bongkar Rahasia Ceo) -->
+      <div class="cert-card" onclick="openModal('./sertifikat/sertifikat-seminar-mandiri.jpg', 'Seminar Nasional: Bongkar Rahasia Ceo')">
+        <div class="cert-img">
+          <img src="./sertifikat/sertifikat-seminar-mandiri.jpg" alt="Seminar Nasional Mandiri" onerror="this.src='./sertifikat/sertifikat-trends-information-teknologi.jpeg'">
+        </div>
+        <div class="cert-header">
+          <div class="cert-badge"><i class="fa-solid fa-award"></i></div>
+          <span class="cert-status"><i class="fa-solid fa-circle-check"></i> Verified (Klik untuk Lihat)</span>
+        </div>
+        <div class="cert-body">
+          <span class="cert-issuer">Institut Teknologi dan Bisnis Indonesia</span>
+          <h3>Seminar Nasional: Bongkar Rahasia Ceo</h3>
+          <p class="cert-date"><i class="fa-regular fa-calendar-alt"></i> 24 Oktober 2025</p>
+          <p class="cert-desc">Partisipasi aktif dalam Seminar Nasional bertema "3 Jurus Langsung Keterima Kerja" yang diselenggarakan di Mandiri University.</p>
+          <div class="tags"><span class="tag">Career</span><span class="tag">Leadership</span></div>
+        </div>
+      </div>
+
+      <!-- Sertifikat 6: GENIUS 2025 Politeknik Kampar -->
+      <div class="cert-card" onclick="openModal('./sertifikat/sertifikat-figma.jpeg', 'GENIUS 2025 - Politeknik Kampar')">
+        <div class="cert-img">
+          <img src="./sertifikat/sertifikat-figma.jpeg" alt="GENIUS 2025" onerror="this.src='./sertifikat/sertifikat-trends-information-teknologi.jpeg'">
+        </div>
+        <div class="cert-header">
+          <div class="cert-badge"><i class="fa-solid fa-award"></i></div>
+          <span class="cert-status"><i class="fa-solid fa-circle-check"></i> Verified (Klik untuk Lihat)</span>
+        </div>
+        <div class="cert-body">
+          <span class="cert-issuer">Hima TIF Politeknik Kampar</span>
+          <h3>GENIUS 2025 - Kompetisi Nasional</h3>
+          <p class="cert-date"><i class="fa-regular fa-calendar-alt"></i> 30 Juli 2025</p>
+          <p class="cert-desc">Partisipasi sebagai peserta dalam event nasional GENIUS 2025 untuk pengembangan kreativitas dan kemampuan digital generasi muda.</p>
+          <div class="tags"><span class="tag">National</span><span class="tag">Digital Skills</span></div>
+        </div>
+      </div>
+
+      <!-- Sertifikat 1: International Webinar ITBI -->
+      <div class="cert-card" onclick="openModal('./sertifikat/sertifikat-himareka_page-0001.jpg', 'International Webinar: IT & Marketing Strategy')">
+        <div class="cert-img">
+          <img src="./sertifikat/sertifikat-himareka_page-0001.jpg" alt="International Webinar ITBI" onerror="this.src='./sertifikat/sertifikat-trends-information-teknologi.jpeg'">
+        </div>
+        <div class="cert-header">
+          <div class="cert-badge"><i class="fa-solid fa-award"></i></div>
+          <span class="cert-status"><i class="fa-solid fa-circle-check"></i> Verified (Klik untuk Lihat)</span>
+        </div>
+        <div class="cert-body">
+          <span class="cert-issuer">ITB Indonesia</span>
+          <h3>International Webinar IT & Marketing Strategy</h3>
+          <p class="cert-date"><i class="fa-regular fa-calendar-alt"></i> 5 Februari 2026</p>
+          <p class="cert-desc">Partisipasi aktif dalam webinar internasional bertema "Integration of Information Technology and Marketing Strategy to Boost Business".</p>
+          <div class="tags"><span class="tag">International</span><span class="tag">IT & Marketing</span></div>
+        </div>
+      </div>
+
+      <!-- Sertifikat 2: Seminar Nasional Akuntansi & Kepemimpinan -->
+      <div class="cert-card" onclick="openModal('./sertifikat/sertifikat-HMA-akutansi_page-0001.jpg', 'Seminar Nasional Kepemimpinan & Organisasi')">
+        <div class="cert-img">
+          <img src="./sertifikat/sertifikat-HMA-akutansi_page-0001.jpg" alt="Seminar Nasional Kepemimpinan" onerror="this.src='./sertifikat/sertifikat-trends-information-teknologi.jpeg'">
+        </div>
+        <div class="cert-header">
+          <div class="cert-badge"><i class="fa-solid fa-award"></i></div>
+          <span class="cert-status"><i class="fa-solid fa-circle-check"></i> Verified (Klik untuk Lihat)</span>
+        </div>
+        <div class="cert-body">
+          <span class="cert-issuer">HIMA Akuntansi ITBI</span>
+          <h3>Seminar Nasional Kepemimpinan</h3>
+          <p class="cert-date"><i class="fa-regular fa-calendar-alt"></i> 25 Juli 2025</p>
+          <p class="cert-desc">Pelantikan Himpunan Mahasiswa Akuntansi dan Seminar Nasional "Empowering Future Leader: Mahasiswa Bersinergi, Organisasi Bertransformasi".</p>
+          <div class="tags"><span class="tag">Leadership</span><span class="tag">Organization</span></div>
+        </div>
+      </div>
+
+      <!-- Sertifikat 3: Seminar Nasional Penulisan Jurnal -->
+      <div class="cert-card" onclick="openModal('./sertifikat/sertifikat-Strategi-kepenulisan-jurnal_page-0001.jpg', 'Strategi Penulisan Jurnal Ilmiah')">
+        <div class="cert-img">
+          <img src="./sertifikat/sertifikat-Strategi-kepenulisan-jurnal_page-0001.jpg" alt="Strategi Penulisan Jurnal" onerror="this.src='./sertifikat/sertifikat-trends-information-teknologi.jpeg'">
+        </div>
+        <div class="cert-header">
+          <div class="cert-badge"><i class="fa-solid fa-award"></i></div>
+          <span class="cert-status"><i class="fa-solid fa-circle-check"></i> Verified (Klik untuk Lihat)</span>
+        </div>
+        <div class="cert-body">
+          <span class="cert-issuer">BEM ITB Indonesia</span>
+          <h3>Strategi Penulisan Jurnal Ilmiah</h3>
+          <p class="cert-date"><i class="fa-regular fa-calendar-alt"></i> 18 Juni 2025</p>
+          <p class="cert-desc">Partisipasi sebagai peserta dalam seminar "Strategi Penulisan Jurnal Dari Konsep Hingga Terbit" di Aula Kampus ITBI.</p>
+          <div class="tags"><span class="tag">Academic</span><span class="tag">Journal Writing</span></div>
+        </div>
+      </div>
+
+      <!-- Sertifikat 4: Seminar Nasional Trends in IT -->
+      <div class="cert-card" onclick="openModal('./sertifikat/sertifikat-trends-information-teknologi.jpeg', 'Seminar Nasional Trends in Information Technology')">
+        <div class="cert-img">
+          <img src="./sertifikat/sertifikat-trends-information-teknologi.jpeg" alt="Trends in Information Technology">
+        </div>
+        <div class="cert-header">
+          <div class="cert-badge"><i class="fa-solid fa-award"></i></div>
+          <span class="cert-status"><i class="fa-solid fa-circle-check"></i> Verified (Klik untuk Lihat)</span>
+        </div>
+        <div class="cert-body">
+          <span class="cert-issuer">ITB Indonesia</span>
+          <h3>Trends in Information Technology</h3>
+          <p class="cert-date"><i class="fa-regular fa-calendar-alt"></i> 23 Oktober 2023</p>
+          <p class="cert-desc">Partisipasi dalam Seminar Nasional "TRENDS IN INFORMATION TECHNOLOGY" yang diselenggarakan di Aula Kampus Pusat ITB Indonesia.</p>
+          <div class="tags"><span class="tag">Information Tech</span><span class="tag">Seminar</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="reveal">
+    <div class="section-header">
+      <span class="section-tag">PORTOFOLIO & REPOSITORY</span>
+      <h2>Proyek & <span class="gold-text">Repository GitHub</span></h2>
+    </div>
+
+    <!-- Project Filter Buttons -->
+    <div class="project-filters">
+      <button class="filter-btn active" data-filter="all">Semua Proyek</button>
+      <button class="filter-btn" data-filter="web">Web Development</button>
+      <button class="filter-btn" data-filter="mining">Mining & Machine Learning</button>
+    </div>
+
+    <div class="projects-grid">
+      
+      <!-- Proyek 1: Pemrograman Web -->
+      <div class="project-card" data-category="web">
+        <div class="project-img"><i class="fa-solid fa-code"></i></div>
+        <div class="project-info">
+          <h3>Pemrograman Web</h3>
+          <p>Kumpulan kode dan proyek pengembangan web interaktif yang berfokus pada struktur HTML, styling CSS, serta fungsionalitas JavaScript.</p>
+          <div class="tags">
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Web Dev</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/arya-Z/Pemrograman-web.git" target="_blank" rel="noopener noreferrer" class="proj-btn"><i class="fa-brands fa-github"></i> Lihat Repository</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyek 2: UAS Text dan Web Mining -->
+      <div class="project-card" data-category="mining">
+        <div class="project-img"><i class="fa-solid fa-brain"></i></div>
+        <div class="project-info">
+          <h3>Text & Web Mining Analysis</h3>
+          <p>Proyek analitis pengolahan teks dan pemrosesan data web untuk ekstraksi informasi serta analisis data terstruktur.</p>
+          <div class="tags">
+            <span class="tag">Text Mining</span>
+            <span class="tag">Web Mining</span>
+            <span class="tag">Data Analysis</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/arya-Z/M.-ARYA_PRATAMA_UAS_text_dan_web_mining.git" target="_blank" rel="noopener noreferrer" class="proj-btn"><i class="fa-brands fa-github"></i> Lihat Repository</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyek 3: Prediksi Rating Lazada (Random Forest Python) -->
+      <div class="project-card" data-category="mining">
+        <div class="project-img"><i class="fa-solid fa-chart-pie"></i></div>
+        <div class="project-info">
+          <h3>Prediksi Rating Lazada (Random Forest Python)</h3>
+          <p>Implementasi pemrosesan data, pembersihan ulasan, dan pemodelan machine learning menggunakan algoritma Random Forest dengan Python.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Random Forest</span>
+            <span class="tag">Machine Learning</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/arya-Z/Prediksi-Rating-Lazada-RandomForest-python.git" target="_blank" rel="noopener noreferrer" class="proj-btn"><i class="fa-brands fa-github"></i> Lihat Repository</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyek 4: AGRITRADE -->
+      <div class="project-card" data-category="web">
+        <div class="project-img"><i class="fa-solid fa-wheat-awn"></i></div>
+        <div class="project-info">
+          <h3>AGRITRADE</h3>
+          <p>Pengembangan sistem platform digital AGRITRADE yang dirancang untuk mendukung perdagangan dan manajemen sektor pertanian secara efisien.</p>
+          <div class="tags">
+            <span class="tag">AGRITRADE</span>
+            <span class="tag">Web Project</span>
+            <span class="tag">System Design</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/arya-Z/AGRITRADE.git" target="_blank" rel="noopener noreferrer" class="proj-btn"><i class="fa-brands fa-github"></i> Lihat Repository</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="reveal">
+    <div class="section-header">
+      <span class="section-tag">REKRUTMEN & KOLABORASI</span>
+      <h2>Kirim Tawaran <span class="gold-text">Pekerjaan</span></h2>
+    </div>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Peluang Karir & Penawaran Langsung</h3>
+        <p>Perusahaan atau HRD dapat mengirimkan pesan atau tawaran posisi Customer Support, Admin ringan, maupun IT Support langsung melalui formulir berikut.</p>
+        
+        <div class="contact-detail">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <strong>Email Resmi:</strong>
+            <p id="emailText">bgarya205@gmail.com</p>
+            <button class="copy-email-btn" onclick="copyEmail()"><i class="fa-solid fa-copy"></i> Salin Email</button>
+          </div>
+        </div>
+        
+        <div class="contact-detail">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <strong>Domisili / Ketersediaan:</strong>
+            <p>Indonesia (Siap untuk kerja Remote / On-Site)</p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <i class="fa-solid fa-briefcase"></i>
+          <div>
+            <h4>Status Rekrutmen:</h4>
+            <p style="color: #10b981; font-weight: 600;">Aktif Mencari Peluang Kerja</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORMULIR KONTAK -->
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/mbdnvqpd" method="POST">
+        <div class="form-group">
+          <input type="text" name="company" placeholder="Nama Perusahaan / HRD" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Alamat Email Perusahaan / Aktif" required>
+        </div>
+        <div class="form-group">
+          <input type="text" name="posision" placeholder="Jenis Pekerjaan\Posisi / Aktif" required>
+        </div>
+        
+        
+        <div class="form-group">
+          <label for="start_date" style="font-size: 0.85rem; color: #fff; display: block; margin-bottom: 5px;">Rencana Jadwal Mulai / Interview:</label>
+          <input type="date" name="start_date" id="start_date" required style="width: 100%; padding: 0.75rem 1rem; background: rgba(240, 240, 242, 0.6); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 8px; color: #000; font-family: 'Plus Jakarta Sans', sans-serif;">
+        </div>
+
+        <div class="form-group">
+          <textarea name="message" rows="4" placeholder="Tuliskan detail tawaran pekerjaan, deskripsi tugas, atau informasi tambahan..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;"><i class="fa-solid fa-paper-plane"></i> Kirim Tawaran/Peluang </button>
+        <div id="formStatus" class="form-status"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- TECH & ADMIN SKILLS MARQUEE -->
+  <div class="tech-marquee-container">
+    <div class="marquee-track">
+      <div class="marquee-item"><i class="fa-solid fa-headset icon-cyan"></i> Customer Support</div>
+      <div class="marquee-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/microsoftexcel.svg" class="excel-brand-icon" style="vertical-align: middle;"> Microsoft Excel Advanced</div>
+      <div class="marquee-item"><i class="fa-solid fa-keyboard icon-gold"></i> Data Entry Professional</div>
+      <div class="marquee-item"><i class="fa-solid fa-database icon-sql"></i> Database Management</div>
+      <div class="marquee-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" style="width: 1.15rem; height: 1.15rem; vertical-align: middle; display: inline-block;" alt="Python"> Python Programming</div>
+      <div class="marquee-item"><i class="devicon-vscode-plain colored" style="font-size: 1.15rem; vertical-align: middle;"></i> Visual Studio Code</div>
+      <div class="marquee-item"><i class="fa-solid fa-users icon-cyan"></i> Communication Skills</div>
+      <div class="marquee-item"><i class="fa-solid fa-laptop-code icon-gold"></i> Software & IT Support</div>
+      
+      <!-- Duplikasi Infinite Loop -->
+      <div class="marquee-item"><i class="fa-solid fa-headset icon-cyan"></i> Customer Support</div>
+      <div class="marquee-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/microsoftexcel.svg" class="excel-brand-icon" style="vertical-align: middle;"> Microsoft Excel Advanced</div>
+      <div class="marquee-item"><i class="fa-solid fa-keyboard icon-gold"></i> Data Entry Professional</div>
+      <div class="marquee-item"><i class="fa-solid fa-database icon-sql"></i> Database Management</div>
+      <div class="marquee-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" style="width: 1.15rem; height: 1.15rem; vertical-align: middle; display: inline-block;" alt="Python"> Python Programming</div>
+      <div class="marquee-item"><i class="devicon-vscode-plain colored" style="font-size: 1.15rem; vertical-align: middle;"></i> Visual Studio Code</div>
+      <div class="marquee-item"><i class="fa-solid fa-users icon-cyan"></i> Communication Skills</div>
+      <div class="marquee-item"><i class="fa-solid fa-laptop-code icon-gold"></i> Software & IT Support</div>
+    </div>
+  </div>
+
+  <!-- IMAGE PREVIEW MODAL LIGHTBOX -->
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="modalImg" alt="Pratinjau Sertifikat">
+    <div id="modalCaption"></div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toastNotification" class="toast">Email berhasil disalin ke clipboard!</div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="logo">M. ARYA <span>PRATAMA</span></div>
+      <p>Mendedikasikan ketelitian, kemampuan komunikasi, dan profesionalisme teknologi untuk kemajuan perusahaan Anda.</p>
+      
+      <div class="socials">
+        <a href="https://wa.me/6283110046169?text=Halo%20M.%20Arya%20Pratama,%20saya%20tertarik%20dengan%20profil%20Anda..." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-icon whatsapp-brand">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/m-arya-pratama-180821332/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon linkedin-brand">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/arya-Z" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon github-brand">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/arya_az4/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon instagram-brand">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="mailto:bgarya205@gmail.com" aria-label="Email" class="social-icon email-brand">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 M. Arya Pratama • Professional Administration & Career Hub</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
